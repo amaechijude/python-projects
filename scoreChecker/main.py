@@ -1,10 +1,13 @@
 print("Welcome to score checker")
 try:
     score = float(input("Input your score: "))
+except ValueError:
+    print("Input a numeric value. 1 try remaining!")
+try:
+    score = float(input("Input your score: "))
 except:
-    print("Input a numeric value")
-
-score = float(input("Input your score: "))
+    print("Try again")
+    quit()
 
 if score >= 0 and score < 40:
     print(f"Your score is {score} and your grade is F")
