@@ -4,7 +4,8 @@ u = int(input("Input upper range: "))
 n = input("What is the number type? Input even, odd or all: ")
 def add_numbers_within_range(x,y):
     total = 0
-    for numbers in range(x,y):
+    #upper range is usually n+1
+    for numbers in range(x, y+1):
         if numbers % 2 == 0 and n == "even":
             total += numbers
         elif numbers % 2 == 1 and n == "odd":
