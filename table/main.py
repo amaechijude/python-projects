@@ -34,29 +34,17 @@ def create_column_func():
         if create_column.upper() != "Y":
             break
         else:
-            for index in range(0,len(n)):
-                if index == len(n):
-                    break
-                else:
-                    n0 = index
-                print(index)
-            '''
-                heading = input("Input the heading of the row: ")
-                n_0 = index
-                n_1 = index
-                n_2 = index
-                n_3 = index
-                n_4 = index
-                row_1 = input(f"Input the {n[n_1][0]}'s {heading} : ")
-                row_2 = input(f"Input the {n[n_2][0]}'s {heading} : ")
-                row_3 = input(f"Input the {n[n_3][0]}'s {heading} : ")
-                row_4 = input(f"Input the {n[n_4][0]}'s {heading} : ")
-                n[n_0].append(heading)
-                n[n_1].append(row_1)
-                n[n_2].append(row_2)
-                n[n_3].append(row_3)
-                n[n_4].append(row_4)
-            print(f"{tabulate(n, headers='firstrow')}")'''
+            heading = input("Input the heading of the row: ")
+            row_1 = input(f"Input the {n[1][0]}'s {heading} : ")
+            row_2 = input(f"Input the {n[2][0]}'s {heading} : ")
+            row_3 = input(f"Input the {n[3][0]}'s {heading} : ")
+            row_4 = input(f"Input the {n[4][0]}'s {heading} : ")
+            n[0].append(heading)
+            n[1].append(row_1)
+            n[2].append(row_2)
+            n[3].append(row_3)
+            n[4].append(row_4)
+        print(f"{tabulate(n, headers='firstrow')}")
     return "Bye!"
 
 #calling the function
