@@ -10,6 +10,6 @@ print(soln1)
 print(soln2)
 print(soln)
 
-#symetric difference
+#symetric difference == returns a new set with unique elements from both 
 output = a.symmetric_difference(b)
 print(output)
