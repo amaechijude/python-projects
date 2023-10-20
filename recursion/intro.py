@@ -1,9 +1,25 @@
 def recursion(x):
-    if x == 20:
-        print("Recussion")
+    if x == 0:
+        c = "ok"
     else:
-        recursion(x+1)
+        recursion(x-1)
         print(x)
-    return "ok"
+    return "End"
+print(recursion(4))
 
-print(recursion(0))
+def first():
+    second()
+    print("first")
+
+def second():
+    third()
+    print("second")
+
+def third():
+    fourth()
+    print("third")
+
+def fourth():
+    print("fourth")
+
+print(first())
