@@ -5,7 +5,7 @@ def sum_of_numbers(digit):
     for num in digit:
         soln += int(num)
         param.append(int(num))
-    return f"The sum total of {param} is = {soln}.\n\t Total = {soln}"
+    return f"The sum total of {param} is = {soln}."
 
 x = input("Input digits: ")
 print(sum_of_numbers(x))
