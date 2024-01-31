@@ -7,4 +7,3 @@ print(f"The file name is {path_test.name}")
 print(path_test.parent)
 #Prints parent directory of the above
 print(path_test.parent.parent)
-print(path_test.parent.parent.parent)
