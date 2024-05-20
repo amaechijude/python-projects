@@ -5,4 +5,6 @@ p = math.pi
 a = math.pow(r,2)
 area = round(p*a, 2)
 #area = round(p*(r**2), 2)
+print(p)
+print(len(str(p)) - 1)
 print(f"The area of the circle is {area}")
